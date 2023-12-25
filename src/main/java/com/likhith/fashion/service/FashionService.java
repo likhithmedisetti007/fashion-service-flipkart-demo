@@ -9,6 +9,12 @@ import com.likhith.fashion.dto.Product;
 @Service
 public interface FashionService {
 
-	List<Product> getAllProducts(String subCategoryName);
+	List<Product> getAllProducts(String subCategoryName, boolean availability, double minPrice, double maxPrice);
+
+	String addProduct(String subCategoryName, Product product);
+
+	String updateProduct(String subCategoryName, Product product);
+
+	String deleteProduct(String subCategoryName, Product product);
 
 }

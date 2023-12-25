@@ -15,6 +15,6 @@ public class Product {
 	private String description;
 	private Price price;
 	private Inventory inventory;
-	private List<Attributes> attributes;
+	private List<Attribute> attributes;
 
 }

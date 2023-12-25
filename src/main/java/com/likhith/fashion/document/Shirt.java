@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.likhith.fashion.dto.Attributes;
+import com.likhith.fashion.dto.Attribute;
 import com.likhith.fashion.dto.Inventory;
 import com.likhith.fashion.dto.Price;
 
@@ -26,6 +26,6 @@ public class Shirt {
 	private String description;
 	private Price price;
 	private Inventory inventory;
-	private List<Attributes> attributes;
+	private List<Attribute> attributes;
 
 }
