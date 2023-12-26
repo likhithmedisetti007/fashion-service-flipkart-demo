@@ -3,11 +3,10 @@ package com.likhith.fashion.mapper;
 import java.util.List;
 
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.Mappings;
 import org.mapstruct.NullValueCheckStrategy;
 import org.mapstruct.ReportingPolicy;
 
+import com.likhith.fashion.document.Jeans;
 import com.likhith.fashion.document.Shirt;
 import com.likhith.fashion.dto.Product;
 
@@ -18,7 +17,8 @@ public interface FashionMapper {
 
 	Shirt mapToShirtFromProduct(Product product);
 
-	@Mappings({ @Mapping(target = "id", source = "id", ignore = true) })
-	Shirt mapToShirtFromShirt(Shirt shirt);
+	List<Product> mapToProductListFromJeansList(List<Jeans> jeansList);
+
+	Jeans mapToJeansFromProduct(Product product);
 
 }
